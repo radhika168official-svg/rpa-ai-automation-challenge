@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RPA-AI Automation Suite" parallel="methods" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.automation.listeners.TestListener"/>
+    </listeners>
+
+    <test name="API Tests">
+        <classes>
+            <class name="com.automation.tests.api.UserLifecycleTest"/>
+        </classes>
+    </test>
+
+    <test name="UI Tests">
+        <classes>
+            <class name="com.automation.tests.ui.PurchaseFlowTest"/>
+            <class name="com.automation.tests.ui.LoginDataProviderTest"/>
+        </classes>
+    </test>
+
+</suite>
